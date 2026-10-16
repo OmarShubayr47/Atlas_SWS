@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-13",
+  "status": "Geometric mesh check passed; physical print/load not tested",
+  "parts": [
+    {
+      "part": "01",
+      "source": "SWS rack shelf - Pi and enclosure - 01 Enclosure cradle120 x90 x8 - corner stops - flush M4 head pockets.stl",
+      "centred": "rack_01.stl",
+      "triangles": 7864,
+      "dimensions_mm": [
+        120.0,
+        90.0,
+        10.5
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        68.0,
+        83.0,
+        -0.0
+      ],
+      "source_sha256": "4f2290a2170a823103caa5475d567ca93b1073ef836563f803366cbde550ddba",
+      "centred_sha256": "7b68a250f306396a2c9193d8fd0707d548eda6a492393a01c20512fb7b791769"
+    },
+    {
+      "part": "02",
+      "source": "SWS rack shelf - Pi and enclosure - 02 Central spine - single vertical rack-hole column - SIDE-FLAT print.stl",
+      "centred": "rack_02.stl",
+      "triangles": 1816,
+      "dimensions_mm": [
+        13.599990844726562,
+        134.0,
+        4.199999809265137
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -48.79999542236328,
+        61.0,
+        -0.0
+      ],
+      "source_sha256": "ba0f17bc46559ecd2d51a634de84f428f1fb3d75ff24a2c7f9d6a8033344c912",
+      "centred_sha256": "92803a28574ebbcc2ad8c70d3eb0e9516b624b8f878106a32147b597293a514e"
+    },
+    {
+      "part": "03",
+      "source": "SWS rack shelf - Pi and enclosure - 03 Left triangular arm8 thick - SIDE-FLAT print.stl",
+      "centred": "rack_03.stl",
+      "triangles": 2952,
+      "dimensions_mm": [
+        90.0,
+        134.0,
+        8.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -257.0,
+        61.0,
+        -0.0
+      ],
+      "source_sha256": "06891bf01e0fb3e3d39fb39da925354de26ec88d58d0744dc6017c19ea4bf416",
+      "centred_sha256": "ffbd57982da7746ad8efd39bca09508a4e15d16e21d1061562934531f1c7b564"
+    },
+    {
+      "part": "04",
+      "source": "SWS rack shelf - Pi and enclosure - 04 Right triangular arm8 thick - SIDE-FLAT print.stl",
+      "centred": "rack_04.stl",
+      "triangles": 2952,
+      "dimensions_mm": [
+        90.0,
+        134.0,
+        8.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        83.0,
+        -109.0,
+        -0.0
+      ],
+      "source_sha256": "fd4bf2fb4c8222ac05f82fcf9c423f3bfabd4e6bfc0c004a62070c6291bcc0b9",
+      "centred_sha256": "6c7cfd28ecac429e294493eddb8ec09b3f3947370c042d17d336dac6e18a1c76"
+    },
+    {
+      "part": "05",
+      "source": "SWS rack shelf - Pi and enclosure - 05 Rear keeper3 thick - retain pins and independent upright restraint.stl",
+      "centred": "rack_05.stl",
+      "triangles": 1800,
+      "dimensions_mm": [
+        18.0,
+        80.99998474121094,
+        3.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -51.0,
+        -82.49999237060547,
+        -0.0
+      ],
+      "source_sha256": "aca3d20d63a9ef80d989398ae6d26c89a418e54859259716f643472e3979178c",
+      "centred_sha256": "5ae5c8ee455f3044c097a3d638f1e674536f88d7deffcc05e1931c2581841eb1"
+    },
+    {
+      "part": "06",
+      "source": "SWS rack shelf - Pi and enclosure - 06 Clamp spacer10 OD x54 - M4 through bolt.stl",
+      "centred": "rack_06.stl",
+      "triangles": 1152,
+      "dimensions_mm": [
+        10.0,
+        10.0,
+        54.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -217.0,
+        -47.0,
+        -0.0
+      ],
+      "source_sha256": "5fa6e64e980f5632375f07712ed03822b9c67adb2a170cab1a176cb29a9b8dc4",
+      "centred_sha256": "bc59ced50c26f1327b0959b4f7d6471ef1b4de8bedfd58d08305331544dc915e"
+    },
+    {
+      "part": "07",
+      "source": "SWS rack shelf - Pi and enclosure - 07 Clamp spacer10 OD x54 - M4 through bolt.stl",
+      "centred": "rack_07.stl",
+      "triangles": 1152,
+      "dimensions_mm": [
+        10.0,
+        10.0,
+        54.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        123.0,
+        -217.0,
+        -0.0
+      ],
+      "source_sha256": "45ada463078b80cc0f1238c2801c6c2c301e7cc07dd04a99b70be4db4563f09d",
+      "centred_sha256": "6ca59052b5bd295aae5ef9398e3a53978493d904c0ac6b1569fbacea9fd62711"
+    },
+    {
+      "part": "08",
+      "source": "SWS rack shelf - Pi and enclosure - 08 Clamp spacer10 OD x54 - M4 through bolt.stl",
+      "centred": "rack_08.stl",
+      "triangles": 1152,
+      "dimensions_mm": [
+        10.0,
+        10.0,
+        54.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -47.0,
+        -217.0,
+        -0.0
+      ],
+      "source_sha256": "60888140acbab33ad16c6ee469d2f3d1c616e7f8f0859d08e0b26203bf7dac6b",
+      "centred_sha256": "cc8836eaf24285b41edcb13c6a1759f63ba5fe130400676c43bcb3e75137dab0"
+    },
+    {
+      "part": "09",
+      "source": "SWS rack shelf - Pi and enclosure - 09 Clamp spacer10 OD x54 - M4 through bolt.stl",
+      "centred": "rack_09.stl",
+      "triangles": 1152,
+      "dimensions_mm": [
+        10.0,
+        10.0,
+        54.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -217.0,
+        -217.0,
+        -0.0
+      ],
+      "source_sha256": "4276f95baf03528eeecd1a77993515d7ec3bbbfb2223d4232a18aaffbc8f99b7",
+      "centred_sha256": "edcf3207c37c331a1504d4fc5b2407abddcb45637f388b8dfec7ad9f62adefd7"
+    },
+    {
+      "part": "10",
+      "source": "SWS rack shelf - Pi and enclosure - 10 Front lid-perimeter clamp - print wide top face DOWN.stl",
+      "centred": "rack_10.stl",
+      "triangles": 2936,
+      "dimensions_mm": [
+        120.0,
+        15.0,
+        8.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        68.0,
+        -389.5,
+        -0.0
+      ],
+      "source_sha256": "0bb7eff3081d50edf4de74b0905cec803959171e0473f7f5fb8dfd2cdd85da93",
+      "centred_sha256": "d605a22a2ae6cecedbe3aa4b76a0ed8dad70c8582202ac46d9c6cb29b171c7d1"
+    },
+    {
+      "part": "11",
+      "source": "SWS rack shelf - Pi and enclosure - 11 Rear lid-perimeter clamp - print wide top face DOWN.stl",
+      "centred": "rack_11.stl",
+      "triangles": 2936,
+      "dimensions_mm": [
+        120.0,
+        13.0,
+        8.0
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -102.0,
+        -388.5,
+        -0.0
+      ],
+      "source_sha256": "36c7b2a095dd1627d0edfd2bc7a8ff53d7774bd6db37d8800092f6d101beaa65",
+      "centred_sha256": "ee1504fa059d3bbf6e21993fd84b034b9868a1126b0aae74ba07d12b370d13cc"
+    },
+    {
+      "part": "12",
+      "source": "SWS rack shelf - Pi and enclosure - 12 LOWER horizontal insertion stick - X0 Z26 -60 reach -3 mm retaining hole.stl",
+      "centred": "rack_12.stl",
+      "triangles": 1476,
+      "dimensions_mm": [
+        71.79998779296875,
+        20.0,
+        4.199999809265137
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        -247.89999389648438,
+        -392.0,
+        -0.0
+      ],
+      "source_sha256": "d729816bdc38e5cc358d0028a60fae4c986a75e7a3d60aaa4f327aaafad21853",
+      "centred_sha256": "7b0cf0d17310c87fab2d77798bd08cea26f72a72489a7023d6e60eb279800592"
+    },
+    {
+      "part": "13",
+      "source": "SWS rack shelf - Pi and enclosure - 13 UPPER horizontal insertion stick - X0 Z87 -61 above lower stick.stl",
+      "centred": "rack_13.stl",
+      "triangles": 1476,
+      "dimensions_mm": [
+        71.80000305175781,
+        20.0,
+        4.199999809265137
+      ],
+      "boundary_or_nonmanifold_edges": 0,
+      "translation_mm": [
+        92.0999984741211,
+        -562.0,
+        -0.0
+      ],
+      "source_sha256": "75e4ccdc091324de24e9a54080abf88e63489e4670a9ff64b6e5303b87c5708f",
+      "centred_sha256": "af8a6bcf22f3e69f7737067eb17cf956c472c06e4eca9ad223587ad15f05995b"
+    }
+  ]
+}

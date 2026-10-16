@@ -1,0 +1,5 @@
+﻿📁 PCB/Schematic
+
+مخطّط الدائرة (Schematic).
+
+نوع الملفات المتوقّعة: .sch, .kicad_sch, .pdf

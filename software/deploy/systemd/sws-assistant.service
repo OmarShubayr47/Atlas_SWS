@@ -1,0 +1,32 @@
+# Smart Working Station: the voice assistant (Hey Atlas / PTT, knob, LED).
+# A systemd USER unit, installed by software/deploy/install_services.sh.
+#   systemctl --user status sws-assistant
+#   journalctl --user-unit=sws-assistant -f          (this boot: add -b)
+#
+# Before running the assistant by hand for a test, stop this unit first:
+# two copies fight over GPIO22, the microphone and the HDMI audio device.
+#   systemctl --user stop sws-assistant   ...test...   systemctl --user start sws-assistant
+[Unit]
+Description=SWS voice assistant
+# Ordering only (no Requires=): the assistant must never depend on the UI.
+After=sws-ui.service
+StartLimitIntervalSec=0
+
+[Service]
+# notify + watchdog: the assistant reports READY=1, then WATCHDOG=1 every few
+# seconds while it is healthy (software/common/liveness.py). If the pings stop
+# — a hang, not a crash — systemd kills it and Restart= starts a fresh one.
+Type=notify
+NotifyAccess=main
+WatchdogSec=60
+WorkingDirectory=%h/sws
+ExecStart=%h/sws/.venv/bin/python -u software/voice_assistant.py
+Restart=always
+RestartSec=3
+# SIGINT = the same clean exit as Ctrl-C in a terminal (closes the mic first).
+KillSignal=SIGINT
+TimeoutStopSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

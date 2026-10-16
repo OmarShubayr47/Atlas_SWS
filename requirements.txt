@@ -1,0 +1,11 @@
+python-dotenv
+gTTS
+requests
+gpiozero
+numpy
+PyAudio
+scipy
+webrtcvad
+openwakeword
+websockets
+schemdraw==0.23

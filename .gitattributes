@@ -1,0 +1,8 @@
+# Normalise line endings. The PC side (Windows: Claude Code, Codex) would
+# otherwise commit CRLF, and a CRLF shell script fails on the Pi with a
+# confusing "bad interpreter" error.
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+# EasyEDA/Gerber exports: store byte-for-byte, never convert line endings
+academy/**/PCB/** -text

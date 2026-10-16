@@ -1,0 +1,14 @@
+.env
+scratch/
+__pycache__/
+*.pyc
+.venv/
+.lgd-nfy*
+# PC side: never commit local notes with secrets, or template archives
+SSH help commands.txt
+*.zip
+*.wav
+# ...except the PCB manufacturing files the Academy package needs
+!academy/**/PCB/Order/*.zip
+# Office lock files
+~$*

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080, initial-scale=1, user-scalable=no">
+<title>Smart Working Station</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- Layout follows the measured projector: fine text at the BOTTOM (sharp),
+     large elements at the TOP (focus softens with height). -->
+<body data-state="idle" data-link="offline" data-view="closed">
+  <header>
+    <div id="clock">--:--</div>
+    <div id="date"></div>
+    <!-- While a file is shown the orb is hidden; this chip keeps the
+         assistant's state visible. -->
+    <div id="chip"><span class="dot"></span><span id="chiptext">Idle</span></div>
+    <div id="link"><span class="dot"></span><span id="linktext">connecting…</span></div>
+  </header>
+
+  <main>
+    <div id="orb" aria-hidden="true">
+      <div class="ripple r1"></div><div class="ripple r2"></div>
+      <div class="ring outer"></div><div class="ring main"></div><div class="core"></div>
+    </div>
+    <div id="state">Idle</div>
+    <div id="detail">Say “Hey Atlas” or press the button</div>
+  </main>
+
+  <!-- Files the assistant opens (viewer.js). Pointer input pans and zooms:
+       a mouse today, the touch foil later. -->
+  <section id="viewer" hidden>
+    <div id="vbar"><span id="vtitle"></span><span id="vinfo"></span></div>
+    <div id="vport"><div id="vcontent"></div></div>
+  </section>
+
+  <section id="conversation">
+    <div class="turn"><div class="who">You</div><div class="text" id="you">—</div></div>
+    <div class="turn"><div class="who">Assistant</div><div class="text" id="ai">—</div></div>
+  </section>
+
+  <footer>
+    <div id="vol"><span>Volume</span><div class="bar"><div class="fill" id="volfill"></div></div><span id="volpct">—</span></div>
+    <div id="ticker"></div>
+    <div id="tag">SMART WORKING STATION</div>
+  </footer>
+
+  <!-- Restart-button feedback: large and central, it is shown while a hand is
+       on the button and the user's eyes are wherever the projection is. -->
+  <div id="banner" hidden><div id="bannertitle"></div><div id="bannertext"></div></div>
+
+  <script src="viewer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

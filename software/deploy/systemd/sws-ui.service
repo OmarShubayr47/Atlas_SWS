@@ -1,0 +1,18 @@
+# Smart Working Station: projected-UI server (loopback SSE + static files).
+# A systemd USER unit, installed by software/deploy/install_services.sh.
+#   systemctl --user status sws-ui      journalctl --user-unit=sws-ui -f
+[Unit]
+Description=SWS projected UI server
+# Never give up restarting: this is an always-on appliance, not a desktop app.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=%h/sws
+ExecStart=%h/sws/.venv/bin/python -u software/ui/server.py
+Restart=always
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

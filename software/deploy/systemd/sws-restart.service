@@ -1,0 +1,19 @@
+# Smart Working Station: restart button on GPIO27.
+# Hold 2 s and release = restart the SWS software; hold 8 s = reboot the Pi.
+# Deliberately its own unit with no dependency on the assistant: it must keep
+# working exactly when the assistant has hung.
+#   journalctl --user-unit=sws-restart -f
+[Unit]
+Description=SWS restart button (GPIO27)
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=%h/sws
+ExecStart=%h/sws/.venv/bin/python -u software/restart_button.py
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

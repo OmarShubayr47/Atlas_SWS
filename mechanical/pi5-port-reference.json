@@ -1,0 +1,64 @@
+{
+  "recorded_date": "2026-10-11",
+  "timezone": "Asia/Riyadh",
+  "units": "mm",
+  "status": "Designed prototype; physical connector and cable fit unverified",
+  "sources": {
+    "mechanical_drawing": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-008347-DS-1-raspberry-pi-5-mechanical-drawing.pdf",
+    "step_archive": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-010083-CA-1-rpi-5%203D%20STEP%20-%20No%20Graphics%20small%20file.zip",
+    "step_filename": "rpi-5b_no_graphics.step",
+    "step_export_date": "2026-05-27",
+    "retrieved_date": "2026-10-11",
+    "warning": "Manufacturer drawing is approximate/reference only, subject to tolerances and change, and unsuitable as production data; physical board checks required."
+  },
+  "registration": {
+    "pcb_size": [85, 56],
+    "primary_hole_diameter": 2.7,
+    "primary_holes_pcb_xy": [[3.5, 3.5], [61.5, 3.5], [3.5, 52.5], [61.5, 52.5]],
+    "corrected_base_post_xy": [[-39, -24.5], [19, -24.5], [-39, 24.5], [19, 24.5]],
+    "base_plate_thickness": 2,
+    "base_post_height_above_plate": 5,
+    "default_pcb_underside_seat_z": 7,
+    "step_pcb_z_bounds": [0.03, 1.306],
+    "step_to_enclosure_translation": [-42.5, -28, 6.97],
+    "piSeat_parameter": {
+      "default": 7,
+      "range": [5, 12],
+      "effect": "Shift port window Z centres by piSeat minus 7 only; does not change posts or move electronics."
+    }
+  },
+  "nominal_reference_method": "Traverse STEP assembly placements and connector front-face boundary vertices; power actuator circle read directly. These bounds are reference geometry, not validated panel cutouts.",
+  "nominal_enclosure_references": {
+    "usb_lower_frontface": {"x": 45.5, "y_bounds": [-6.25, 8.25], "z_bounds": [8.876, 24.496]},
+    "usb_upper_frontface": {"x": 45.28, "y_bounds": [11.75, 26.25], "z_bounds": [8.881, 24.331]},
+    "ethernet_frontface": {"x": 45.55, "y_bounds": [-25.535, -9.965], "z_bounds": [8.486, 21.426]},
+    "usb_c_frontface": {"y": -29.2, "x_bounds": [-35.77, -26.83], "z_bounds": [8.406, 11.566]},
+    "micro_hdmi_pcb_x25_8_frontface": {"y": -29.63, "x_bounds": [-20.084, -13.316], "z_bounds": [8.271, 11.44]},
+    "micro_hdmi_pcb_x39_2_frontface": {"y": -29.63, "x_bounds": [-6.684, 0.084], "z_bounds": [8.271, 11.44]},
+    "onboard_power_actuator": {"face_centre": [-42.95, -9.6, 10.006], "face_diameter": 1.8},
+    "micro_sd_socket_body": {"x_bounds": [-40.25, -28.85], "y_bounds": [-5.89, 6.06], "z_bounds": [5.55, 6.97], "note": "Includes mouth region; card travel and finger clearance unverified."}
+  },
+  "prototype_window_corner_radius": 0.8,
+  "prototype_windows": [
+    {"id": "usbLower", "face": "right", "horizontal_axis": "y", "horizontal_centre": 1, "default_z_centre": 16.69, "width": 16.5, "height": 18},
+    {"id": "usbUpper", "face": "right", "horizontal_axis": "y", "horizontal_centre": 19, "default_z_centre": 16.69, "width": 16.5, "height": 18},
+    {"id": "ethernet", "face": "right", "horizontal_axis": "y", "horizontal_centre": -17.75, "default_z_centre": 14.96, "width": 17.6, "height": 15},
+    {"id": "usbC", "face": "front", "horizontal_axis": "x", "horizontal_centre": -31.3, "default_z_centre": 10, "width": 12, "height": 8},
+    {"id": "hdmiPair", "face": "front", "horizontal_axis": "x", "horizontal_centre": -10, "default_z_centre": 10, "width": 26, "height": 8},
+    {"id": "leftService", "face": "left", "horizontal_axis": "y", "horizontal_centre": -1.5, "default_z_centre": 9, "width": 23, "height": 10}
+  ],
+  "verification": {
+    "live_featurescript_regenerated": true,
+    "saved_prototype_parts": 11,
+    "live_source_normalized_copyback_matched": true,
+    "whole_assembly_result": "Recorded separately by main continuation; not asserted by this reference record.",
+    "hardware_tests": "None"
+  },
+  "remaining_checks": [
+    "Actual connector and cable moulding fit, insertion depth and latch access",
+    "MicroSD insertion/removal and onboard-button reach",
+    "Actual Pi underside seat and Pi/HAT/cooler stack",
+    "HAT DC-input connector envelope and route",
+    "Printed fit and remaining wall-web strength"
+  ]
+}

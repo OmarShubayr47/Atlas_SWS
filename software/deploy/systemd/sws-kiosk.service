@@ -1,0 +1,22 @@
+# Smart Working Station: Chromium kiosk showing the UI on the projector.
+# A systemd USER unit, installed by software/deploy/install_services.sh.
+# SWS_MANAGED=1 tells run_kiosk.sh that the UI server is its own unit, and to
+# wait for the desktop's Wayland socket: with linger this unit can start before
+# the autologin session exists.
+#   journalctl --user-unit=sws-kiosk -f
+[Unit]
+Description=SWS projector kiosk (Chromium)
+After=sws-ui.service
+Wants=sws-ui.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=%h/sws
+Environment=SWS_MANAGED=1
+ExecStart=%h/sws/software/ui/run_kiosk.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

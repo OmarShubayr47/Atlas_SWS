@@ -1,0 +1,5 @@
+﻿📁 PCB/BOM
+
+قائمة المكوّنات (Bill of Materials).
+
+نوع الملفات المتوقّعة: .csv, .xlsx
